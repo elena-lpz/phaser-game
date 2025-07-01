@@ -2,6 +2,9 @@ import { Boot } from "./scenes/Boot.js";
 import { Game } from "./scenes/Game.js";
 import { GameOver } from "./scenes/GameOver.js";
 import { Preloader } from "./scenes/Preloader.js";
+import { MainMenu } from "./scenes/MainMenu.js";
+
+import Phaser from "phaser";
 
 const config = {
   type: Phaser.AUTO,
@@ -20,7 +23,7 @@ const config = {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  scene: [Boot, Preloader, Game, GameOver],
+  scene: [Boot, Preloader, Game, GameOver, MainMenu],
 };
 
 new Phaser.Game(config);
