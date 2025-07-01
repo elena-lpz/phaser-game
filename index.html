@@ -46,7 +46,14 @@
   </head>
   <body>
     <div id="game-container"></div>
-    <script src="./phaser.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "phaser3": "https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.esm.js"
+        }
+      }
+    </script>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

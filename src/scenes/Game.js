@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+
 import { Player } from "../gameObjects/Player.js";
 
 export class Game extends Phaser.Scene {
